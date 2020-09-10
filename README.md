@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a project by using React to fetch robots from API and list all robots.
 
 ## Available Scripts
 
