@@ -4,12 +4,16 @@ import './SearchBox.css';
 const SearchBox = ({ searchfield, searchChange}) => {
     return (
         <div className='input_container'>
-            <input 
+            <label for='search-input' className='serach-label'>Search Robots: </label>
+            <input
+                id='search-input'
+                arial-label='Search Robots' 
                 className='form-control' 
                 type='search' 
                 placeholder='search robots'
                 onChange = {searchChange} 
             />
+        
         </div>
         
     );

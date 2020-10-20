@@ -1,11 +1,18 @@
 .input_container {
     margin: 20px;
-    width: 50%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input_container input{
-    margin-left: 50%;
+    width: 50%;
     text-align: center;
     height: 4rem;
+}
+
+.serach-label{
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(224, 221, 221);
 }
