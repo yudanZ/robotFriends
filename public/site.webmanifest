@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Find robots friend",
+    "short_name": "robots friend",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
