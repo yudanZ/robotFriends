@@ -1,11 +1,12 @@
 import React from 'react';
+
 import './Card.css';
 
 const Card = ( {id,name, email, imgUrl }) => {
     
     return (
         
-        <div id={id} className="card " style={{width: '15rem'}}>
+        <div id={id} className="card" style={{width: '15rem'}}>
             <img src={'https://robohash.org/' + id} className="card-img-top" alt="">
             </img>
             <div className="card-body">
