@@ -22,30 +22,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>8/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -98,33 +98,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { 
     CHANGE_SEARCH_FIELD,
@@ -133,33 +133,33 @@
     REQUEST_ROBOTS_FAILED  
 &nbsp;
 } from './constants';
-const intialStateSearch = <span class="cstat-no" title="statement not covered" >{</span>
+const intialStateSearch = {
     searchField: ''
 }
 &nbsp;
-export const searchRobots = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span>tate=<span class="branch-0 cbranch-no" title="branch not covered" >intialStateSearch,</span> action=<span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    switch(action.type) {</span>
+export const searchRobots = (state=intialStateSearch, action=<span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {
+    switch(action.type) {
         case CHANGE_SEARCH_FIELD:
-<span class="cstat-no" title="statement not covered" >            return Object.assign({}, state, {searchField:action.payload});</span>
+            return Object.assign({}, state, {searchField:action.payload});
         default:
-<span class="cstat-no" title="statement not covered" >            return state;</span>
+            return state;
     }
 }
 &nbsp;
-const intialStateRobots = <span class="cstat-no" title="statement not covered" >{</span>
+const intialStateRobots = {
     isPending: false,
     robots: [],
     error: ''
 }
-export const requestRobots = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span>tate=<span class="branch-0 cbranch-no" title="branch not covered" >intialStateRobots,</span> action=<span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    switch(action.type) {</span>
+export const requestRobots = (state=intialStateRobots, action=<span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {
+    switch(action.type) {
         case REQUEST_ROBOTS_PENDING:
-<span class="cstat-no" title="statement not covered" >            return Object.assign({}, state, { isPending: true});</span>
+            return Object.assign({}, state, { isPending: true});
         case REQUEST_ROBOTS_SUCCESS:
-<span class="cstat-no" title="statement not covered" >            return Object.assign({}, state, { robots : action.payload, isPending: false});</span>
+            return Object.assign({}, state, { robots : action.payload, isPending: false});
         case REQUEST_ROBOTS_FAILED:
-<span class="cstat-no" title="statement not covered" >            return Object.assign({}, state, {error: action.payload, isPending: false});</span>
-        default: <span class="cstat-no" title="statement not covered" >return state;</span>
+            return Object.assign({}, state, {error: action.payload, isPending: false});
+        default: return state;
     }
 }</pre></td></tr></table></pre>
 
@@ -168,7 +168,7 @@ export const requestRobots = <span class="cstat-no" title="statement not covered
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Oct 06 2020 11:03:06 GMT+0200 (GMT+02:00)
+                at Thu Oct 22 2020 11:29:04 GMT+0200 (GMT+02:00)
             </div>
         </div>
         <script src="..\prettify.js"></script>
